@@ -1,0 +1,44 @@
+.info{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+.info .name{
+    min-width: 40%;
+    font-size: 1.5rem;
+}
+.description p{
+    color: #ccc;
+    line-height: 24px;
+}
+.curriculum{
+    display: flex;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.item_container{
+    flex: 1;
+}
+.item_container h2{
+    font-size: 2rem;
+}
+.item_container .item{
+    margin-top: 2rem;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 2rem 0;
+    
+}
+.item_container .item h3{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.item_container .item p,
+.item_container .item span{
+    color: rgba(255,255,255, .5);
+}
+.curriculum_info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+}
