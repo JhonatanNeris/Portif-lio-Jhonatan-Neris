@@ -17,12 +17,7 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/module
 
 
 const Projects = () => {
-    const mangDogData = [
-        {id: "1", image: "caixa2.png"},
-        {id: "2", image: "cardapio.png"},
-        {id: "3", image: "cozinha.png"},
-        {id: "4", image: "caixa.png"},
-    ]
+    
     return (
         <div className='container'>
             <div className={styles.title}>

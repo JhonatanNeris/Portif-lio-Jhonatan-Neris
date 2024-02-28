@@ -1,14 +1,16 @@
 .container {
-    display: flex;    
+    display: flex;
     margin-top: 4rem;
 }
-.left{
-    padding: 0 4rem 0 0; 
+
+.left {
+    padding: 0 4rem 0 0;
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .left h3,
 .left h4 {
     font-size: 3.8rem;
@@ -34,7 +36,8 @@
     color: transparent;
 
 }
-.left p{
+
+.left p {
     margin-top: 2rem;
     color: #ccc;
     line-height: 28px;
@@ -59,6 +62,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .left .buttons .btn_outline {
     background-color: transparent;
     border: 2px solid #fff;
@@ -69,7 +73,8 @@
     font-weight: bold;
     letter-spacing: .5px;
 }
-.right{
+
+.right {
     width: 560px;
     height: 620px;
     overflow: hidden;
@@ -77,16 +82,19 @@
     align-items: center;
     justify-content: center;
 }
-.right img{
+
+.right img {
     object-fit: cover;
     width: 110%;
     /* height: 100%; */
-    
+
 }
-.container_projects{
+
+.container_projects {
     margin-top: 8rem;
 }
-.container_projects .title h2{
+
+.container_projects .title h2 {
     background:
         linear-gradient(to right,
             #b16cea,
@@ -104,24 +112,29 @@
     color: transparent;
     font-size: 3.5rem;
 }
-.container_projects .title p{
+
+.container_projects .title p {
     color: #ccc;
     margin-top: 2.5rem;
     line-height: 28px;
 }
-.project_img img{
+
+.project_img img {
     max-width: 100%;
 }
+
 .project {
     display: flex;
     margin-top: 5rem;
 }
-.project .project_img{
+
+.project .project_img {
     width: 60%;
     height: 600px;
     overflow-y: hidden;
 }
-.project .project_right h3{
+
+.project .project_right h3 {
     background:
         linear-gradient(to right,
             #b16cea,
@@ -139,7 +152,8 @@
     color: transparent;
     font-size: 2rem;
 }
-.project .project_right{
+
+.project .project_right {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -147,43 +161,51 @@
     justify-content: center;
     padding-left: 3rem;
 }
-.project_right p{
+
+.project_right p {
     color: #ccc;
-    
+
 }
-.project .project_img img{
+
+.project .project_img img {
     width: 100%;
     /* height: 100%; */
     /* object-fit: cover; */
     /* overflow-y: hidden; */
 }
-.project .buttons{
+
+.project .buttons {
     display: flex;
     gap: 2rem;
     justify-content: center;
     align-items: center;
 }
-.languages{
+
+.languages {
     margin-top: 5rem;
-    display: flex;    
-    flex-direction: column;    
+    display: flex;
+    flex-direction: column;
 }
-.languages h1{
+
+.languages h1 {
     font-size: 3.5rem;
 
 }
-.languages p{
+
+.languages p {
     color: #ccc;
-    margin-top: 1rem ;
+    margin-top: 1rem;
 
 }
-.container_languages{
+
+.container_languages {
     margin-top: 3rem;
-    display: grid;    
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1.3rem;
 }
-.container_languages .box{
+
+.container_languages .box {
     display: flex;
     background-color: #1C1C22;
     justify-content: center;
@@ -194,46 +216,134 @@
     gap: 1.5rem;
     transition: .5s;
 }
-.container_languages .box:hover{
+
+.container_languages .box:hover {
     background-color: #25252c;
     transform: scale(1.1);
 }
-.container_languages .box:hover img{
+
+.container_languages .box:hover img {
     transform: scale(1.4);
 }
-.container_languages .box .img img{
+
+.container_languages .box .img img {
     width: 60%;
     transition: .5s;
-    
+
 }
-.message{
+
+.message {
     display: flex;
     flex-direction: column;
     margin: 12rem auto;
-    width: 80%;    
+    width: 80%;
 }
-.message h2{
+
+.message h2 {
     font-size: 3rem;
 }
-.message a{
+
+.message a {
     font-size: 3rem;
-    /* text-align: center; */    
+    /* text-align: center; */
     font-weight: bold;
 }
-.message .link{
+
+.message .link {
     display: flex;
     align-items: center;
     margin-top: 2rem;
     border-bottom: 2px solid;
     border-image: linear-gradient(to right,
-    #b16cea 0%,
-    #ff5e69 20%,
-    #ffa84b 100%);
+            #b16cea 0%,
+            #ff5e69 20%,
+            #ffa84b 100%);
 }
-.message .link .button a{
+
+.message .link .button a {
     display: flex;
     align-items: center;
 }
-.message .link span{
+
+.message .link span {
     font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 3rem;
+    }
+
+    .left {
+        padding: 0;
+        width: 100%;
+    }
+
+    .left h3,
+    .left h4 {
+        font-size: 3rem;
+    }
+
+    .right {
+        width: 100%;
+        height: 450px;
+    }
+
+    .container_projects {
+        margin-top: 5rem;
+    }
+
+    .container_projects .title h2 {
+        font-size: 2.6rem;
+    }
+
+    .project {
+        margin-top: 3rem;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .project .project_img{
+        width: 100%;
+        height: auto;
+    }    
+    .project .project_right{
+        width: 100%;
+        gap: 1.5rem;
+        padding-left: 0rem;
+    }
+    .project_right p{
+        color: #ccc;        
+    }
+    
+    .project .buttons{        
+        gap: 1rem;       
+    }
+   
+    .languages h1{
+        font-size: 2.6rem;
+    
+    }    
+    .container_languages{
+        margin-top: 2rem;   
+        grid-template-columns: 1fr 1fr;   
+        gap: 1rem;
+    }
+    .message{
+        margin: 6rem auto;          
+    }
+    .message h2{
+        font-size: 2.8rem;       
+    }
+    .message a{
+        font-size: 2.8rem;
+    }
+    .message .link .button a{      
+        width: 60%;      
+    }
+    .message .link .button svg{
+        height: 8rem;
+        width: 8rem;
+    }
 }

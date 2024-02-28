@@ -80,3 +80,6 @@ nav button{
   align-items: center;
   justify-content: center;
 }
+.none{
+  display: none;
+}

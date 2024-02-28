@@ -31,8 +31,6 @@
     align-items: center;
     /* text-align: center; */
     /* gap: 0 0 0 .5rem; */
-
-
 }
 
 .container .info .contacts div p {
@@ -82,4 +80,17 @@ input[type=submit]{
 .error p{
     padding: 1rem 0;
 
+}
+
+@media (max-width:768px){
+    .container{
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+    }
+    .container .info {
+        padding: 0;
+    }
+    form{
+        margin-top: 2rem;
+    }
 }

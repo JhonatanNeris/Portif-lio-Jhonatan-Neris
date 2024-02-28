@@ -3,7 +3,7 @@
     justify-content: space-between;
     padding: 1rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 .nav_left {
@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    /* position: relative; */
 }
 
 .nav_left .logo {
@@ -28,7 +29,8 @@
     font-size: 1rem;
     transition: .5s;
 }
-.nav_left .links a:hover{
+
+.nav_left .links a:hover {
     background:
         linear-gradient(to right,
             #b16cea 0%,
@@ -44,13 +46,14 @@
     /* Set the color of the text
         to transparent  */
     color: transparent;
-    
+
 }
-.nav_right .button{
+
+.nav_right .button {
     display: flex;
 }
 
-.nav_right a{
+.nav_right a {
     background-color: #fff;
     color: #000;
     font-weight: bold;
@@ -81,3 +84,81 @@
     /* font-weight: bold; */
 
 }
+
+/* Menu */
+.menu_toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+    .menu_toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .nav_left{
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        align-items: flex-start;
+        gap: 1rem;
+        flex: 1;
+        /* padding: 0 0 2rem 0; */
+    }
+
+    .links.open {
+        display: none;
+      }
+
+    .links{
+        /* display: none; */
+        flex-direction: column;
+        /* background-color: #a70000; */
+        /* height: 100vh; */
+        width: 100%;
+        /* position: absolute; */
+        /* flex: 1; */
+    }
+    .links a{
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+/* @media (max-width: 768px) {
+    .links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #f9f9f9;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .links.open {
+      display: flex;
+    }
+  
+    .menu_toggle {
+      display: block;
+    }
+  
+    .button {
+      display: none;
+    }
+  }  */
