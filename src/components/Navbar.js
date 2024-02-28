@@ -12,9 +12,9 @@ import { IoMdMenu } from "react-icons/io";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-    console.log("menu", menuOpen)
+  const toggleMenu = () => {    
+    setMenuOpen(!menuOpen); 
+    console.log("menu" , menuOpen)   
   };
 
   return (
@@ -25,16 +25,16 @@ const Navbar = () => {
             <h2>JN</h2>
           </div>
           <div className={styles.menu_toggle}>
-            <div  onClick={toggleMenu}><IoMdMenu /></div>
+            <div onClick={toggleMenu}><IoMdMenu /></div>
           </div>
-          <div className={menuOpen ? `${styles.links} ${styles.open}` : styles.links}>
+          <div className={menuOpen ? `${styles.links} ${styles.open}` : `${styles.links} `}>
           {/* <div className={menuOpen ? styles.menuOpen : styles.links}> */}
           {/* <div className={styles.links}> */}
-            <NavLink to="/" className={({ isActive }) => (isActive ? styles.active : "")} onClick={toggleMenu}>Home</NavLink>
-            <NavLink to="/projects" className={({ isActive }) => (isActive ? styles.active : "")} onClick={toggleMenu}>Projetos</NavLink>
+            <NavLink to="/" className={({ isActive }) => (isActive ? styles.active : "")} onClick={() => setMenuOpen(false)}>Home</NavLink>
+            <NavLink to="/projects" className={({ isActive }) => (isActive ? styles.active : "")} onClick={() => setMenuOpen(false)}>Projetos</NavLink>
             {/* <NavLink to="/certificates" className={({ isActive }) => (isActive ? styles.active : "")}>Certificados</NavLink> */}
-            <NavLink to="/about" className={({ isActive }) => (isActive ? styles.active : "")} onClick={toggleMenu}>Sobre mim</NavLink>
-            <NavLink to="/contacts" className={({ isActive }) => (isActive ? styles.active : "")} onClick={toggleMenu}>Contatos</NavLink>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? styles.active : "")} onClick={() => setMenuOpen(false)}>Sobre mim</NavLink>
+            <NavLink to="/contacts" className={({ isActive }) => (isActive ? styles.active : "")} onClick={() => setMenuOpen(false)}>Contatos</NavLink>
           </div>
         </div>
         <div className={styles.nav_right}>

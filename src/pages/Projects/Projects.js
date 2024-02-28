@@ -92,11 +92,11 @@ const Projects = () => {
                         <h2>Todo List Avançado + Local Storage</h2>
                         <p>Projeto feito com Javascript puro, Html e Css. O usuário pode realizar um CRUD com as tarefas e como recurso adicional pode pesquisar e filtrar as tarefas que deseja exibir. Esse foi meu primeiro projeto que utiliza a local storage de navegadores.</p>
                         <div style={{ display: 'inline-block' }}>
-                            <Link className='btn-color'>Ver projeto</Link>
+                            <Link to="https://todo-list-local-storage.vercel.app/" className='btn-color'>Ver projeto</Link>
                         </div>
                     </div>
                     <div className={styles.preview}>
-                        <img src="Todo.png" alt="" />
+                        <img src="todo.png" alt="" />
                     </div>
                 </div>
 

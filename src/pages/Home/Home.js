@@ -45,14 +45,14 @@ const Home = () => {
         </div>
         <div className={styles.project}>
           <div className={styles.project_img}>
-            <img src="Todo.png" alt="imagem do projeto" />
+            <img src="todo.png" alt="imagem do projeto" />
           </div>
           <div className={styles.project_right}>
             <h3>Todo List + Local Storage</h3>
             <p>Projeto desenvolvido com React. O banco de dados foi desenvolvido com o Firebase e possui recursos de autenticação de usuário. Utiliza React Router, Context entre outras técnicas</p>
             <div className={styles.buttons}>
               <Link to="https://github.com/JhonatanNeris/TodoList-LocalStorage" className='btn-outline icon'><span><FaGithub /></span>Ver código</Link>
-              <Link className='btn-color icon'>Ver aplicação</Link>
+              <Link to="https://todo-list-local-storage.vercel.app/" className='btn-color icon'>Ver aplicação</Link>
             </div>
           </div>
         </div>
