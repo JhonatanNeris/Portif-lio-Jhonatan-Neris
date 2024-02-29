@@ -325,6 +325,9 @@
         font-size: 2.6rem;
     
     }    
+    .container_languages .box:hover {
+        transform: scale(1);
+    }
     .container_languages{
         margin-top: 2rem;   
         grid-template-columns: 1fr 1fr;   

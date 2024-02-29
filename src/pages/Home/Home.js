@@ -38,8 +38,8 @@ const Home = () => {
             <h3>MiniBlog</h3>
             <p>Projeto desenvolvido com React. O banco de dados foi desenvolvido com o Firebase e possui recursos de autenticação de usuário. Utiliza React Router, Context entre outras técnicas</p>
             <div className={styles.buttons}>
-              <Link to="https://github.com/JhonatanNeris/miniBlog" className='btn-outline icon'><span><FaGithub /></span>Ver código</Link>
-              <Link to="https://mini-blog-eight-mu.vercel.app/" className='btn-color icon'>Ver aplicação</Link>
+              <Link to="https://github.com/JhonatanNeris/miniBlog" target="_blank" className='btn-outline icon'><span><FaGithub /></span>Ver código</Link>
+              <Link to="https://mini-blog-eight-mu.vercel.app/" target="_blank" className='btn-color icon'>Ver aplicação</Link>
             </div>
           </div>
         </div>
@@ -51,8 +51,8 @@ const Home = () => {
             <h3>Todo List + Local Storage</h3>
             <p>Projeto desenvolvido com React. O banco de dados foi desenvolvido com o Firebase e possui recursos de autenticação de usuário. Utiliza React Router, Context entre outras técnicas</p>
             <div className={styles.buttons}>
-              <Link to="https://github.com/JhonatanNeris/TodoList-LocalStorage" className='btn-outline icon'><span><FaGithub /></span>Ver código</Link>
-              <Link to="https://todo-list-local-storage.vercel.app/" className='btn-color icon'>Ver aplicação</Link>
+              <Link to="https://github.com/JhonatanNeris/TodoList-LocalStorage" target="_blank" className='btn-outline icon'><span><FaGithub /></span>Ver código</Link>
+              <Link to="https://todo-list-local-storage.vercel.app/" target="_blank" className='btn-color icon'>Ver aplicação</Link>
             </div>
           </div>
         </div>
@@ -64,8 +64,8 @@ const Home = () => {
             <h3>Projeto CineFan + API TMDb</h3>
             <p>Projeto feito com Javascript puro. Consome uma API de filmes, séries e programas de TV e faz a listagem de alguns desses dados. O usuário pode realizar uma pesquisa que irá retornar cards com os resultados encontrados na API. A aplicação também possui modelos de carousel de imagens.</p>
             <div className={styles.buttons}>
-              <Link to="https://github.com/JhonatanNeris/CineFan" className='btn-outline icon'><span><FaGithub /></span>Ver código</Link>
-              <Link to="https://cine-fan.vercel.app/" className='btn-color icon'>Ver aplicação</Link>
+              <Link to="https://github.com/JhonatanNeris/CineFan" target="_blank" className='btn-outline icon'><span><FaGithub /></span>Ver código</Link>
+              <Link to="https://cine-fan.vercel.app/" target="_blank" className='btn-color icon'>Ver aplicação</Link>
             </div>
           </div>
         </div>
